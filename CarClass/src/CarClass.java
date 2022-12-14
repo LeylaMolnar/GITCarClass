@@ -12,18 +12,18 @@ public class CarClass {
 }
 
 class Car {
-
+//attributes
 	private String brand;
 	private String model;
 	private int amountOfFuel;
 
-
+//methods
 	public void brake() {
 		System.out.println("Car is braking");
 	}
 
 	public void accelerate() {
-
+        //decrease fuel, unless empty
 		if (amountOfFuel > 0) {
 			System.out.println("Car is accelerating");
 			amountOfFuel--;
@@ -43,14 +43,14 @@ class Car {
 
 	}
 
-
+//constructors
+    //parameterized
 	public Car(String brand, String model, int amountOfFuel) {
 		this.brand = brand;
 		this.model = model;
 		this.amountOfFuel = amountOfFuel;
 	}
-
-
+    //default
 	public Car() {
 
 	}
